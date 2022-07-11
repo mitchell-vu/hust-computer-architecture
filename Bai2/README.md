@@ -2,7 +2,7 @@
 
 Viết chương trình vẽ một quả bóng hình tròn di chuyển trên màn hình mô phỏng Bitmap của Mars. Nếu đối tượng đập vào cạnh của màn hình thì sẽ di chuyển theo chiều ngược lại.
 
-![Keyboard and Display MMIO Simulator](https://github.com/mitchell-vu/hust-computer-architecture/blob/main/Bai2/screen-example-2.jpg?raw=true)
+![Keyboard and Display MMIO Simulator](https://github.com/mitchell-vu/hust-computer-architecture/blob/main/Bai2/screen-example-2.png?raw=true)
 
 ## Yêu cầu
 
