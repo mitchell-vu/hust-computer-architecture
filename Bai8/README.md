@@ -1,6 +1,6 @@
 # Bài 8 - Mô phỏng ổ đĩa RAID 5
 
-Hệ thống ổ đĩa RAID 5 cần tối thiểu 3 ổđĩa cứng, trong đó phần dữ liệu parity sẽ được chứa lần lượt lên 3 ổ đĩa như trong hình dưới.
+Hệ thống ổ đĩa RAID 5 cần tối thiểu 3 ổ đĩa cứng, trong đó phần dữ liệu parity sẽ được chứa lần lượt lên 3 ổ đĩa như trong hình dưới.
 
 <pre>
 Nhap chuoi ki tu : DCE.****ABCD1234HUSTHUST
