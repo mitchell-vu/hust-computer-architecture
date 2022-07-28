@@ -2,8 +2,6 @@
 #                              Circle                                #
 ######################################################################
 #                                                                    #
-######################################################################
-#                                                                    #
 #       This program requires the Keyboard and Display MMIO          #
 #       and the Bitmap Display to be connected to MIPS.              #
 #                                                                    #
@@ -218,10 +216,10 @@ drawCircle:
 loop_drawCircle:
  	slt	$v0, $t0, $s2   	# if (i < R)
 	beqz	$v0,  end_drawCircle
-	
-	sll	$t5, $t0, 2
-	lw	$t3, CIRCLE_DATA($t5)	# Load j to $t3	 
-	
+
+	sll	$t5, $t0, 2		# CIRCLE_DATA[i]
+	lw	$t3, CIRCLE_DATA($t5)	# Load j to $t3 
+
 	move 	$a0, $t0		# i = $a0
 	move 	$a1, $t3		# j = $a1
 	jal 	drawCirclePoint	# Draw (x0 + i, y0 + j), (x0 + j, y0 + i)
@@ -231,7 +229,7 @@ loop_drawCircle:
 	jal 	drawCirclePoint	# Draw (x0 - i, y0 - j), (x0 - j, y0 - i)
 	add 	$a1, $zero, $t3
 	jal 	drawCirclePoint	# Draw (x0 - i, y0 + j), (x0 - j, y0 + i)
-	
+
 	addi 	$t0, $t0, 1
 	j 	loop_drawCircle
 end_drawCircle:
